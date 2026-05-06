@@ -15,7 +15,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { io } from "socket.io-client";
 import LiveRoutingMatrix from "./components/LiveRoutingMatrix";
 
-const API_BASE  = import.meta.env.VITE_API_BASE  || "http://localhost:4000";
+const API_BASE  = import.meta.env.VITE_API_BASE  || "https://matrix88.onrender.com";
 const SOCKET_URL= import.meta.env.VITE_SOCKET_URL || API_BASE;
 const NUMS      = Array.from({ length: 8 }, (_, i) => i + 1);
 
